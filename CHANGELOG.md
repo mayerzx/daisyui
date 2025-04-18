@@ -2,9 +2,102 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## 5.0.27 (2025-04-18)
+
+
+### Bug Fixes
+
+* toggle padding value inconsistencies. closes: [#3746](https://github.com/saadeghi/daisyui/issues/3746) ([59e1575](https://github.com/saadeghi/daisyui/commit/59e1575f420217b7ab71f19ce1a17f1ded80b3f5))
+
+## 5.0.26 (2025-04-18)
+
+
+### Bug Fixes
+
+* drawer z-index issue. closes [#3797](https://github.com/saadeghi/daisyui/issues/3797) ([00c20c3](https://github.com/saadeghi/daisyui/commit/00c20c389a0d4f77420027f3a8736fb1cb8e01e6))
+
+## 5.0.25 (2025-04-17)
+
+
+### Bug Fixes
+
+* kbd border width ([eaa78a8](https://github.com/saadeghi/daisyui/commit/eaa78a8e58dc4401efb13acd63860a39aaa2e548))
+
+## 5.0.24 (2025-04-17)
+
+
+### Bug Fixes
+
+* join outline issues. closes: [#3722](https://github.com/saadeghi/daisyui/issues/3722) ([78bf76d](https://github.com/saadeghi/daisyui/commit/78bf76ddffde31022b56c0df28f8eea3a7aeeeaa))
+
+## 5.0.23 (2025-04-16)
+
+
+### Bug Fixes
+
+* add isolate to drawer-content to avoid z-index overflow. closes: [#3790](https://github.com/saadeghi/daisyui/issues/3790) ([488804f](https://github.com/saadeghi/daisyui/commit/488804f4cc3260a0e0cf33e96b00c50b4b69bedc))
+
+## 5.0.22 (2025-04-16)
+
+
+### Bug Fixes
+
+- add isolate to collapse. closes: [#3713](https://github.com/saadeghi/daisyui/issues/3713) ([24b4742](https://github.com/saadeghi/daisyui/commit/24b47422b9e98509a9b3914a1cb778c867535199))
+- fix: outline in join element. closes: #3722
+- fix: toast position. closes: #3738, closes: #3702
+
+## 5.0.21 (2025-04-16)
+
+### Bug Fixes
+
+- fix: badge-outline border color. closes: #3784
+- fix: dock-active accepts variants. closes: #3170
+
+## 5.0.20 (2025-04-15)
+
+### Bug Fixes
+
+* modal-start scroll gutter. closes: [#3787](https://github.com/saadeghi/daisyui/issues/3787) ([52414ef](https://github.com/saadeghi/daisyui/commit/52414efd62cd8fd905ff5e5af61c06d0d98c8f41))
+
+## 5.0.19 (2025-04-11)
+
+
+### Bug Fixes
+
+* diff not working on iOS, fix docs. closes: [#3715](https://github.com/saadeghi/daisyui/issues/3715) ([cc9da38](https://github.com/saadeghi/daisyui/commit/cc9da38d08617d03e5948ebe72d90c015506e311))
+
+## 5.0.18 (2025-04-10)
+
+
+### Bug Fixes
+
+* validator working with `aria-invalid` ([f4688a3](https://github.com/saadeghi/daisyui/commit/f4688a32d6a8cd0929e914e43bd91d8b8c4cd726))
+
+## 5.0.17 (2025-04-08)
+
+
+### Bug Fixes
+
+* Bundle file for version. ([7fd2640](https://github.com/saadeghi/daisyui/commit/7fd264003b81953de4b342fe66e1559e4146f6c5)), closes [#3765](https://github.com/saadeghi/daisyui/issues/3765)
+
+## 5.0.16 (2025-04-07)
+
+### Bug Fixes
+
+* fix: collapse-content transition duplicate, transition typo (#3761)
+* fix tabs-box render issue on Nuxt. closes: #3724
+
 ## 5.0.15 (2025-04-07)
 
+### Bug Fixes
+
+* dropdown-center RTL, modal gutter, collapse-content animation
+
 ## 5.0.14 (2025-04-07)
+
+### Bug Fixes
+
+* workaround for lightningcss issue of color mix in `&:before`. closes: #3758, closes: #3755
 
 ## 5.0.13 (2025-04-06)
 

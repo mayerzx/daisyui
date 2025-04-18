@@ -1,10 +1,6 @@
-import yaml from "js-yaml"
-import { readFileSync } from "fs"
-
-const yamlFile = readFileSync("src/lib/data/store.yaml", "utf8")
-const yamlData = yaml.load(yamlFile)
-
+import { PUBLIC_DAISYUI_API_PATH } from "$env/static/public"
 import { LEMONSQUEEZY_API_KEY } from "$env/static/private"
+import yaml from "js-yaml"
 
 const LSParams = {
   headers: {
@@ -14,7 +10,25 @@ const LSParams = {
   },
 }
 
+const fetchStoreData = async () => {
+  try {
+    const response = await fetch(`${PUBLIC_DAISYUI_API_PATH}/data/store.yaml`)
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch store data: ${response.status}`)
+    }
+
+    const yamlText = await response.text()
+    return yaml.load(yamlText)
+  } catch (e) {
+    console.error(`Error loading or parsing YAML`, e)
+    throw error(500, "Server configuration error: Could not load data")
+  }
+}
+
 export async function load() {
+  const yamlData = await fetchStoreData()
+
   const productsResponse = await fetch(
     "https://api.lemonsqueezy.com/v1/products?page[size]=100",
     LSParams,

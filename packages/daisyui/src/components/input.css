@@ -28,7 +28,7 @@
     }
   }
 
-  :where(input[type="date"])  {
+  :where(input[type="date"]) {
     @apply inline-block;
   }
 
@@ -39,6 +39,7 @@
     outline: 2px solid var(--input-color);
     outline-offset: 2px;
     isolation: isolate;
+    z-index: 1;
   }
 
   &:has(> input[disabled]),
